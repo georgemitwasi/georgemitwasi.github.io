@@ -1,4 +1,4 @@
-# public_html
+# gmitwasi.github.io
 Assignment No. 5
 
 George Mitwasi
