@@ -1,0 +1,211 @@
+\hypertarget{class_element}{}\section{Element Class Reference}
+\label{class_element}\index{Element@{Element}}
+
+
+{\ttfamily \#include $<$Element.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_element_ab0d0e20be9a36ae676202db753faeec9}{Element} ()
+\item 
+\hyperlink{class_element_ad633862f931b7b0c8128799548be5d41}{Element} (std\+::string \hyperlink{class_element_aa2e34a2b19601115c47264cfe5393df5}{set\+Tag}, int \hyperlink{class_element_a0e794db96e5e940bd740884443fc790a}{set\+Line\+No})
+\item 
+int \hyperlink{class_element_a762e3441cdb9f57e9e38a92930b8b89e}{get\+Line\+No} ()
+\item 
+void \hyperlink{class_element_a0e794db96e5e940bd740884443fc790a}{set\+Line\+No} (int set\+Line\+No)
+\item 
+std\+::string \hyperlink{class_element_a81cffd331255cfb7c8b142ffd1c93298}{get\+Tag} ()
+\item 
+void \hyperlink{class_element_aa2e34a2b19601115c47264cfe5393df5}{set\+Tag} (std\+::string set\+Tag)
+\item 
+std\+::string \hyperlink{class_element_ada6063abc4e37aec580cb3cdf9501b4a}{get\+Content} ()
+\item 
+void \hyperlink{class_element_a973ef0052e83a51bc5c8e6a119405894}{set\+Content} (std\+::string set\+Content)
+\item 
+std\+::vector$<$ \hyperlink{class_element}{Element} $\ast$ $>$ \hyperlink{class_element_a8f8f5c6525ed8be33e0557fada9c18d3}{get\+Children} ()
+\item 
+void \hyperlink{class_element_a470319b8780a34d2b4f838f958428c83}{add\+Child} (\hyperlink{class_element}{Element} $\ast$elem\+Child)
+\item 
+void \hyperlink{class_element_addd8669954c6fbf73820d521793ca409}{find\+Attr} (std\+::string str\+Line)
+\item 
+void \hyperlink{class_element_af886176d937c55d5e1520e668c07f3d2}{print\+Attr} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_element_ae0a8fe73a08103598092d5c10d80dcfe}{str\+Tag\+Name}
+\item 
+std\+::string \hyperlink{class_element_a0074c635f8cdfb1c76a5feb5b564a992}{str\+Content}
+\item 
+int \hyperlink{class_element_ab571e5aba3703c8d736aa2ff6c0cc56b}{line\+No}
+\item 
+std\+::vector$<$ \hyperlink{class_element}{Element} $\ast$ $>$ \hyperlink{class_element_afc5e4b6ea250fd1aab288c9ce76d081e}{vec\+Element\+Children}
+\item 
+std\+::vector$<$ \hyperlink{class_attribute}{Attribute} $\ast$ $>$ \hyperlink{class_element_a020f955746d986f934c4b4be82cfdcc0}{vec\+Attributes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents an element in the X\+M\+L file. I has been expanded from the version used in Assignment 3 to include elements needed for Assignment 4 \begin{DoxyAuthor}{Author}
+George Mitwasi 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_element_ab0d0e20be9a36ae676202db753faeec9}{}\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\subsubsection[{Element()}]{\setlength{\rightskip}{0pt plus 5cm}Element\+::\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_element_ab0d0e20be9a36ae676202db753faeec9}
+Default constructor, which initializes data members to placeholder values \hypertarget{class_element_ad633862f931b7b0c8128799548be5d41}{}\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\subsubsection[{Element(std\+::string set\+Tag, int set\+Line\+No)}]{\setlength{\rightskip}{0pt plus 5cm}Element\+::\+Element (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{set\+Tag, }
+\item[{int}]{set\+Line\+No}
+\end{DoxyParamCaption}
+)}\label{class_element_ad633862f931b7b0c8128799548be5d41}
+Two-\/parameter constructor, 
+\begin{DoxyParams}{Parameters}
+{\em set\+Tag} & name of element extracted from an element opening tag \\
+\hline
+{\em set\+Line\+No} & line number at which the element opening tag was found \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_element_a470319b8780a34d2b4f838f958428c83}{}\index{Element@{Element}!add\+Child@{add\+Child}}
+\index{add\+Child@{add\+Child}!Element@{Element}}
+\subsubsection[{add\+Child(\+Element $\ast$elem\+Child)}]{\setlength{\rightskip}{0pt plus 5cm}void Element\+::add\+Child (
+\begin{DoxyParamCaption}
+\item[{{\bf Element} $\ast$}]{elem\+Child}
+\end{DoxyParamCaption}
+)}\label{class_element_a470319b8780a34d2b4f838f958428c83}
+Add a child to the vector of children 
+\begin{DoxyParams}{Parameters}
+{\em elem\+Child} & the child to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_addd8669954c6fbf73820d521793ca409}{}\index{Element@{Element}!find\+Attr@{find\+Attr}}
+\index{find\+Attr@{find\+Attr}!Element@{Element}}
+\subsubsection[{find\+Attr(std\+::string str\+Line)}]{\setlength{\rightskip}{0pt plus 5cm}void Element\+::find\+Attr (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{str\+Line}
+\end{DoxyParamCaption}
+)}\label{class_element_addd8669954c6fbf73820d521793ca409}
+Parse the given string line, find any attributes, and push them onto vec\+Attributes 
+\begin{DoxyParams}{Parameters}
+{\em str\+Line} & the line to be parsed for attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_a8f8f5c6525ed8be33e0557fada9c18d3}{}\index{Element@{Element}!get\+Children@{get\+Children}}
+\index{get\+Children@{get\+Children}!Element@{Element}}
+\subsubsection[{get\+Children()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Element} $\ast$ $>$ Element\+::get\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_element_a8f8f5c6525ed8be33e0557fada9c18d3}
+Get the vector of children of the current element \begin{DoxyReturn}{Returns}
+the vector of children of this element 
+\end{DoxyReturn}
+\hypertarget{class_element_ada6063abc4e37aec580cb3cdf9501b4a}{}\index{Element@{Element}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!Element@{Element}}
+\subsubsection[{get\+Content()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Element\+::get\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_element_ada6063abc4e37aec580cb3cdf9501b4a}
+Get the textual content contained in the element. \begin{DoxyReturn}{Returns}
+textual content contained in the element 
+\end{DoxyReturn}
+\hypertarget{class_element_a762e3441cdb9f57e9e38a92930b8b89e}{}\index{Element@{Element}!get\+Line\+No@{get\+Line\+No}}
+\index{get\+Line\+No@{get\+Line\+No}!Element@{Element}}
+\subsubsection[{get\+Line\+No()}]{\setlength{\rightskip}{0pt plus 5cm}int Element\+::get\+Line\+No (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_element_a762e3441cdb9f57e9e38a92930b8b89e}
+Get the line number at which the current element was found. \begin{DoxyReturn}{Returns}
+line number at which the current element was found 
+\end{DoxyReturn}
+\hypertarget{class_element_a81cffd331255cfb7c8b142ffd1c93298}{}\index{Element@{Element}!get\+Tag@{get\+Tag}}
+\index{get\+Tag@{get\+Tag}!Element@{Element}}
+\subsubsection[{get\+Tag()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Element\+::get\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_element_a81cffd331255cfb7c8b142ffd1c93298}
+Get the tag name of the element found. \begin{DoxyReturn}{Returns}
+tag name of the element found. 
+\end{DoxyReturn}
+\hypertarget{class_element_af886176d937c55d5e1520e668c07f3d2}{}\index{Element@{Element}!print\+Attr@{print\+Attr}}
+\index{print\+Attr@{print\+Attr}!Element@{Element}}
+\subsubsection[{print\+Attr()}]{\setlength{\rightskip}{0pt plus 5cm}void Element\+::print\+Attr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_element_af886176d937c55d5e1520e668c07f3d2}
+Print out the contents of vec\+Attributes \hypertarget{class_element_a973ef0052e83a51bc5c8e6a119405894}{}\index{Element@{Element}!set\+Content@{set\+Content}}
+\index{set\+Content@{set\+Content}!Element@{Element}}
+\subsubsection[{set\+Content(std\+::string set\+Content)}]{\setlength{\rightskip}{0pt plus 5cm}void Element\+::set\+Content (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{set\+Content}
+\end{DoxyParamCaption}
+)}\label{class_element_a973ef0052e83a51bc5c8e6a119405894}
+Set the textual content contained in the element. 
+\begin{DoxyParams}{Parameters}
+{\em set\+Content} & the content to set, read from the X\+M\+L File \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_a0e794db96e5e940bd740884443fc790a}{}\index{Element@{Element}!set\+Line\+No@{set\+Line\+No}}
+\index{set\+Line\+No@{set\+Line\+No}!Element@{Element}}
+\subsubsection[{set\+Line\+No(int set\+Line\+No)}]{\setlength{\rightskip}{0pt plus 5cm}void Element\+::set\+Line\+No (
+\begin{DoxyParamCaption}
+\item[{int}]{set\+Line\+No}
+\end{DoxyParamCaption}
+)}\label{class_element_a0e794db96e5e940bd740884443fc790a}
+Set the line number at which the current element was found. 
+\begin{DoxyParams}{Parameters}
+{\em set\+Line\+No} & the line number to be set \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_element_aa2e34a2b19601115c47264cfe5393df5}{}\index{Element@{Element}!set\+Tag@{set\+Tag}}
+\index{set\+Tag@{set\+Tag}!Element@{Element}}
+\subsubsection[{set\+Tag(std\+::string set\+Tag)}]{\setlength{\rightskip}{0pt plus 5cm}void Element\+::set\+Tag (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{set\+Tag}
+\end{DoxyParamCaption}
+)}\label{class_element_aa2e34a2b19601115c47264cfe5393df5}
+Set tag name of the element found. 
+\begin{DoxyParams}{Parameters}
+{\em set\+Tag} & the tag name to be set \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_element_ab571e5aba3703c8d736aa2ff6c0cc56b}{}\index{Element@{Element}!line\+No@{line\+No}}
+\index{line\+No@{line\+No}!Element@{Element}}
+\subsubsection[{line\+No}]{\setlength{\rightskip}{0pt plus 5cm}int Element\+::line\+No\hspace{0.3cm}{\ttfamily [private]}}\label{class_element_ab571e5aba3703c8d736aa2ff6c0cc56b}
+line number at which the element opening tag was found \hypertarget{class_element_a0074c635f8cdfb1c76a5feb5b564a992}{}\index{Element@{Element}!str\+Content@{str\+Content}}
+\index{str\+Content@{str\+Content}!Element@{Element}}
+\subsubsection[{str\+Content}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Element\+::str\+Content\hspace{0.3cm}{\ttfamily [private]}}\label{class_element_a0074c635f8cdfb1c76a5feb5b564a992}
+the textual content of the element \hypertarget{class_element_ae0a8fe73a08103598092d5c10d80dcfe}{}\index{Element@{Element}!str\+Tag\+Name@{str\+Tag\+Name}}
+\index{str\+Tag\+Name@{str\+Tag\+Name}!Element@{Element}}
+\subsubsection[{str\+Tag\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Element\+::str\+Tag\+Name\hspace{0.3cm}{\ttfamily [private]}}\label{class_element_ae0a8fe73a08103598092d5c10d80dcfe}
+name of element extracted from an element opening tag \hypertarget{class_element_a020f955746d986f934c4b4be82cfdcc0}{}\index{Element@{Element}!vec\+Attributes@{vec\+Attributes}}
+\index{vec\+Attributes@{vec\+Attributes}!Element@{Element}}
+\subsubsection[{vec\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Attribute}$\ast$ $>$ Element\+::vec\+Attributes\hspace{0.3cm}{\ttfamily [private]}}\label{class_element_a020f955746d986f934c4b4be82cfdcc0}
+vector of attributes \hypertarget{class_element_afc5e4b6ea250fd1aab288c9ce76d081e}{}\index{Element@{Element}!vec\+Element\+Children@{vec\+Element\+Children}}
+\index{vec\+Element\+Children@{vec\+Element\+Children}!Element@{Element}}
+\subsubsection[{vec\+Element\+Children}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Element}$\ast$ $>$ Element\+::vec\+Element\+Children\hspace{0.3cm}{\ttfamily [private]}}\label{class_element_afc5e4b6ea250fd1aab288c9ce76d081e}
+vector of the element\textquotesingle{}s direct children 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Element.\+h\item 
+Element.\+cpp\end{DoxyCompactItemize}

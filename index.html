@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--File: /~gmitwasi/public_html/index.html
+GUI I Assignment: Creating Your First Web Page
+George Mitwasi, Umass Lowell Computer Science, george_mtiwasi@student.uml.edu
+Copyright (c) 2016 by George Mitwasi. All rights reserved.
+May be freely copyed or used for educational purposes with credit to the author.
+Updated: 9/8/2016-->
+
+<html>
+
+    <!-- HEAD -->
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <!-- borrowed some icons from FontAwesome with this CDN -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <title>George's Webpage</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <!-- BODY -->
+    <body>
+
+        <!-- GLOBAL CONTAINER -->
+        <div id="container" class="container">
+
+            <!-- NAVIGATION BAR -->
+            <!-- Resource: This nav bar was taken from http://www.w3schools.com/css/css_navbar.asp
+                           and further styled by myself -->
+            <div id="topmenu" class="topmenu">
+                <ul id="topnvav" class="topnav">
+                    <li id="icon" class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                </ul>
+            </div> <!-- END NAVIGATION BAR -->
+
+            <!-- ABOUT -->
+            <div id="about" class="about content">
+                <h1>George Mitwasi</h1>
+
+                <!-- ICONS -->
+                <ul class="icons">
+                    <!--GITHUB-->
+                    <li><a href="https://github.com/georgemitwasi"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <!--LINKEDIN-->
+                    <li><a href="https://www.linkedin.com/in/georgemitwasi"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <!--SOUNDCLOUD-->
+                    <li><a href="https://soundcloud.com/georgemitwasi"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+                </ul>
+
+                <!-- LIST OF OTHER STUFF -->
+                <ul style="list-style-type:square;">
+                    <!-- EMAIL -->
+                    <li>Email: <strong>george_mitwasi@student.uml.edu</strong></li>
+                    <!-- DISCRIPTION -->
+                    <li>Hello world. I am a <strong>Computer Science</strong> student at <strong>UMass Lowell</strong> and this is my personal webpage. Below you'll find courses that I've taken and stuff.</li>
+                </ul>
+
+            </div> <!-- END ABOUT -->
+
+            <!-- GUI -->
+            <div id="gui" class="gui content">
+                <h2>COMP 4610: Graphical Programming I</h2>
+
+                <!--COURSE INFO-->
+                <h3>Course Info</h3>
+                <ul style="list-style-type:square;">
+                    <li>Semester: <strong>Fall '16'</strong></li>
+                    <li>Professor: <strong>Wenjin Zhou</strong></li>
+                </ul>
+
+                <!-- LIST OF GUI1 PROJECTS -->
+                <h3>Projects</h3>
+                <ul style="list-style-type:square;">
+                    <li>This webpage...</li>
+                    <li><a href="./InClass1/index.html">My Website!</a></li>
+                    <li><a href="./InClass2/example.html">The Analog Specialists</a></li>
+                    <li><a href="./Assn3/index.html">Pacific Trails Resort</a></li>
+                </ul>
+
+            </div> <!-- END GUI -->
+
+            <!-- COMP4 -->
+            <div id="comp" class="comp content">
+                <h2>COMP 2040: Computing IV</h2>
+
+                <!--COURSE INFO-->
+                <h3>Course Info</h3>
+                <ul style="list-style-type:square;">
+                    <li>Semester: <strong>Fall '15</strong></li>
+                    <li>Professor: <strong>Jesse Heines</strong></li>
+                </ul>
+
+                <!--COMP4 PROJECTS-->
+                <h3>Projects</h3>
+                <ul style="list-style-type:square;">
+                    <li><a href="Doxygen_Assn4/html">Doxygen Output for Assignment No. 4</a></li>
+                </ul>
+
+            </div> <!-- END COMP4 -->
+
+            <!-- LINE BREAK -->
+            <hr />
+
+            <!-- COPYRIGHT -->
+            <p class="footer"><strong>Copyright (c) George Mitwasi <br /> All rights reserved.</strong></p>
+            <p class="footer"><a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+            <p class="footer"><a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a><p>
+
+        </div> <!-- END CONTAINER -->
+    </body>
+</html>
