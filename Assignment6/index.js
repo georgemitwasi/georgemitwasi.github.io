@@ -21,7 +21,7 @@ function populateTable() {
          !/^\d+$/.test(colStart_string) ||
          !/^\d+$/.test(colEnd_string) )
     {
-        displayError("Invalid input. Only positive numbers are accepted.");
+        displayError("Invalid input. Only positive integers are accepted.");
         return;
     }
 
