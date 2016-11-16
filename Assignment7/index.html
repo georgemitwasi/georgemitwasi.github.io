@@ -1,0 +1,46 @@
+<!--     File: HTML file for HW7 in Graphical User Interface Progamming I -->
+<!--  Created: November 12th, 2016 -->
+<!--   Author: George Mitwasi -->
+
+Library/component that source code is part of
+Copyright details
+Brief and meaningful description of class(es) in source file -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script src="jquery.validate.js"></script>
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <p> Please enter four numbers: </p>
+
+            <form id="form">
+                <div id="inputs">
+                    <input type="text" id="rowStart" name="rowStart" placeholder="Row start" value=5 class="required">
+                    <br><br>
+                    <input type="text" id="rowEnd" name="rowEnd" placeholder="Row end" value=10 class="required">
+                    <br><br>
+                    <input type="text" id="colStart" name="colStart" placeholder="Column start" value=6 class="required">
+                    <br><br>
+                    <input type="text" id="colEnd" name="colEnd" placeholder="Column end" value=11 class="required">
+                </div>
+                <br><br>
+                <button type="submit" value="submit" id="button">Submit</button>
+            </form>
+
+            <br><br>
+
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
