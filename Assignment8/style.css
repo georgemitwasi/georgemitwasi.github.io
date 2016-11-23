@@ -1,0 +1,122 @@
+/*     File: JavaScript & JQuery file for HW7 in Graphical User Interface Progamming I
+    Created: November 12th, 2016
+     Author: George Mitwasi   */
+
+p, form, input {
+    font-family: "Veranda", sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+input {
+    padding-left: 5px;
+    height: 1em;
+    width: 20%;
+    display: inline-block;
+}
+
+#inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    margin-top: -25px;
+}
+
+#container {
+    margin: 0 auto;
+    width: 70%;
+
+}
+
+table {
+    font-family: "Veranda", sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr td {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: right;
+}
+
+tr:first-child td {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+td:first-child {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+tr:first-child td:first-child {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+h5 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input {
+    width: 93%;
+}
+
+.divInputs {
+    width: 100px;
+}
+
+.error {
+    display: block;
+    font-size: 14px;
+    color: #cc0000;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+
+}
