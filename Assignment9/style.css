@@ -6,6 +6,7 @@ body {
     background: white;
 }
 
+/* #container is a container with two children elements, scrabble & buttons */
 #container {
     height: 280px;
     width: 970px;
@@ -18,40 +19,10 @@ body {
     padding: 20px;
 }
 
+/* #scrabble is a container for the rack and board elements */
 #scrabble {
     width: 740px;
 }
-#buttons {
-    width: 170px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#top {
-    margin-bottom: 10px;
-}
-#bottom {
-    display: flex;
-    flex-direction: column;
-}
-#resetGame {
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
-
-#tilesLeft {
-    color: white;
-    border: 0;
-    font-size: 15px;
-    text-shadow: 1px 1px 2px black;
-}
-.score {
-    color: white;
-    font-size: 30px;
-    font-weight: bolder;
-    text-shadow: 3px 3px 2px black;
-}
-
 .board {
     height: 100px;
     width: 740px;
@@ -59,15 +30,12 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 .rack {
     height: 100px;
     width: 740px;
     display: flex;
     justify-content: space-around;
 }
-
-
 .board-tile {
     position: relative;
     height: 100px;
@@ -100,7 +68,6 @@ body {
     background-image: url('');
     filter: grayscale(0%);
 }
-
 .rack-tile {
     position: relative;
     height: 95px;
@@ -113,13 +80,11 @@ body {
                 5px 5px 2px 0px rgba(0, 0, 0, 0.50);
     background-image: url('tile background.jpg');
 }
-
 .letter {
     margin: 0;
     padding: 0;
     font-size: 50px;
 }
-
 .value {
     color: #5B2116;
     margin-right: 7px;
@@ -130,6 +95,38 @@ body {
     bottom: 0;
     right: 0;
 }
+
+/* Styling for the score counter, buttons, and tile counter 
+   #buttons contains the above mentioned elements */
+#buttons {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top {
+    margin-bottom: 10px;
+}
+#bottom {
+    display: flex;
+    flex-direction: column;
+}
+#resetGame {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+#tilesLeft {
+    color: white;
+    border: 0;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black;
+}
+.score {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 2px black;
+} /* End Buttons */
 
 /* Source: http://www.bestcssbuttongenerator.com/ */
 .btn {
