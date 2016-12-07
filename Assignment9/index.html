@@ -1,0 +1,51 @@
+<!--     File: HTML file for HW9 in Graphical User Interface Progamming I -->
+<!--  Created: December 6th, 2016 -->
+<!--   Author: George Mitwasi -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>GUI Programming I, Assignment 8: Form Validation and Dynamic Tabs</title>
+        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <!-- Container for the game -->
+        <div id="container">
+            <!-- Container for two board pieces -->
+            <div class="scrabble">
+                <div class="board" id="board">
+                    <div class="board-tile"></div>
+                    <div class="board-tile double-word" class="">DOUBLE WORD SCORE</div>
+                    <div class="board-tile"></div>
+                    <div class="board-tile"></div>
+                    <div class="board-tile"></div>
+                    <div class="board-tile double-word">DOUBLE WORD SCORE</div>
+                    <div class="board-tile"></div>
+                </div>
+                <div class="rack" id="rack"></div>
+            </div>
+            <!-- Container for the buttons and user score -->
+            <div class="buttons">
+                <div id="top">
+                    <a id="userScore" class="score">Score: </a>
+                    <a id="scoreValue" class="score">0</a>
+                </div>
+                <div id="bottom">
+                    <a id="moreTiles" class="btn">More Tiles!</a>
+                    <a id="resetGame" class="btn">Reset Game</a>
+                </div>
+                <a id="tilesLeft">Tiles left: 100</a>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>

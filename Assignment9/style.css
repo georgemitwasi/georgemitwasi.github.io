@@ -1,0 +1,175 @@
+/*     File: CSS file for HW7 in Graphical User Interface Progamming I
+    Created: December 6th, 2016
+     Author: George Mitwasi   */
+
+body {
+    background: white;
+}
+
+#container {
+    height: 280px;
+    width: 970px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-image: url('scrabble background.jpg');
+    display: flex;
+    align-items: center;
+    border: solid 10px black;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#scrabble {
+    width: 740px;
+}
+#buttons {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top {
+    margin-bottom: 10px;
+}
+#bottom {
+    display: flex;
+    flex-direction: column;
+}
+#resetGame {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#tilesLeft {
+    color: white;
+    border: 0;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black;
+}
+.score {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 2px black;
+}
+
+.board {
+    height: 100px;
+    width: 740px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rack {
+    height: 100px;
+    width: 740px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.board-tile {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: inset 6px 6px 2px 0px rgba(0, 0, 0, 0.1),
+                5px 5px 2px 0px rgba(0, 0, 0, 0.50);
+    background-image: url('tile background.jpg');
+    filter: grayscale(40%);
+}
+.double-word {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: inset 6px 6px 2px 0px rgba(0, 0, 0, 0.1),
+                5px 5px 2px 0px rgba(0, 0, 0, 0.50);
+    /* Attributes unique to double-word */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    background-color: #EC8A5F;
+    background-image: url('');
+    filter: grayscale(0%);
+}
+
+.rack-tile {
+    position: relative;
+    height: 95px;
+    width: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    box-shadow: inset 6px 6px 2px 0px rgba(0, 0, 0, 0.1),
+                5px 5px 2px 0px rgba(0, 0, 0, 0.50);
+    background-image: url('tile background.jpg');
+}
+
+.letter {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.value {
+    color: #5B2116;
+    margin-right: 7px;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Source: http://www.bestcssbuttongenerator.com/ */
+.btn {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+    background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+    background-color:#ffffff;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    border:1px solid #dcdcdc;
+    display: inline-block;
+    text-align: center;
+    cursor:pointer;
+    color: #280C09;
+    font-size:15px;
+    font-weight:bold;
+    padding:14px 21px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+
+.btn:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+    background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+    background-color:#f6f6f6;
+}
+.btn:active {
+    position:relative;
+    top:1px;
+}
