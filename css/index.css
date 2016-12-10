@@ -1,0 +1,128 @@
+/*     File: CSS file for HW4 in Graphical User Interface Progamming I
+    Created: 9/8/2016
+    Updated: 12/9/2016
+     Author: George Mitwasi   */
+
+
+
+/* CONTAINER */
+/* This entire page is build on top of this container. For the background of
+   this container I used a noise generator to produce a background image */
+#container {
+    background-image: url("../images/noisytexture.png");
+    padding: 0;
+} /* END CONTAINER */
+
+/* STANDARD TAGS */
+/* These are standard tags to style different text components of the webpage */
+body {
+    background-color: #f2f2f2;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h1 {
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+h2 {
+    color: black;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+p {
+    font-weight: bold;
+    color: #373737;
+}
+.container .content {
+    margin: 10px auto 0;
+}
+.footer {
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+img {
+    padding: 0px;
+    margin: 0px;
+} /* END STANDARD TAGS */
+
+/* IDs */
+/* This contains the styling of the main parts of my webpage */
+#topmenu {
+    width: 900px;
+    padding: 0;
+    background-color: #062F4F;
+    border: 5px solid black;
+    margin: 0 auto;
+}
+#about {
+    position: relative;
+    width: 830px;
+    height: 190px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-top: 20px;
+    background-color: #F4F4F4;
+    border: 5px dashed #062F4F;
+    box-shadow: 3px 3px 3px 1px #888888;
+}
+#gui {
+    position: relative;
+    width: 830px;
+    height: 280px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    background-color: #F4F4F4;
+    border: 5px dashed #062F4F;
+    box-shadow: 3px 3px 3px 1px #888888;
+}
+#comp {
+    width: 830px;
+    height: 230px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    background-color: #F4F4F4;
+    border: 5px dashed #062F4F;
+    box-shadow: 3px 3px 3px 1px #888888;
+} /* END IDS */
+
+/* LINE */
+/* This styles the bottom line that divides the footer */
+hr {
+    height: 10px;
+    margin-top: 20px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+/* NAVIGATION BAR */
+ul.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0px;
+    background-color: #062F4F;
+}
+#topmenu li {
+    float: right;
+}
+#topmenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#topmenu li a:hover {
+    background-color: #111;
+} /* END NAVIGATION BAR */
