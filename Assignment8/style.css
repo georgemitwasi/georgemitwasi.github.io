@@ -1,0 +1,198 @@
+/*     File: JavaScript & JQuery file for HW7 in Graphical User Interface Progamming I
+    Created: November 22th, 2016
+     Author: George Mitwasi   */
+
+p, form, input {
+    font-family: "Veranda", sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+input {
+    padding-left: 5px;
+    height: 1em;
+    width: 20%;
+    display: inline-block;
+}
+
+/* Styling for all the inputs, sliders, and the submit button */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h5 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input {
+    width: 93%;
+}
+
+.divInputs {
+    width: 100px;
+}
+
+.error {
+    display: block;
+    font-size: 14px;
+    color: #cc0000;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-top: -25px;
+}
+
+/* Styling for the tables */
+table {
+    font-family: "Veranda", sans-serif;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+td, th {
+    position: relative;
+}
+
+tr td {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: right;
+    position: relative;
+}
+
+tr:first-child td {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+td:first-child {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+tr:first-child td:first-child {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+li:hover .deleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 25px;
+  width: 1.5em;
+  background: hsla(2, 80%, 47%, 0.75);
+  top: -26px;
+  right: -1px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+/* Styling for tabs, checkboxes, and delete buttons */
+#tabs, ul {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.deleteBtn {
+  display: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.deleteMultiple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deleteMultiple .btn {
+  display: flex;
+  width: 90%;
+  margin-left: 20px;
+}
+
+#deleteTables {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.checkboxes {
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.checkboxes .checkbox {
+  border: 3px solid #bfbfbf;
+  background-color: #303030;
+  margin: 0 10px;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.checkboxes label {
+  color: white;
+}
